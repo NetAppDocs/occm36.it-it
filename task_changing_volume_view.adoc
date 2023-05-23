@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: task_changing_volume_view.html 
+keywords: volume view, changing, selecting, switching, views 
+summary: È possibile passare alla vista volume di Cloud Manager, che consente di creare volumi in AWS senza dover gestire i sistemi storage Cloud Volumes ONTAP. 
+---
+= Passaggio alla vista volume
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager offre due viste di gestione: La vista del sistema di storage per la gestione dei sistemi storage in un cloud ibrido e la vista del volume per la creazione di volumi in AWS senza dover gestire i sistemi storage. È possibile passare da una vista all'altra, ma tali istanze dovrebbero essere rare perché una singola vista dovrebbe soddisfare le proprie esigenze.
+
+Per ulteriori informazioni su Volume View, vedere link:concept_storage_management.html#simplified-storage-management-using-the-volume-view["Gestione dello storage semplificata grazie a Volume View"].
+
+.Fasi
+. Nella parte superiore destra della console di Cloud Manager, fare clic sul menu, quindi su *View Selection* (Visualizza selezione).
+. Nella pagina View Selection, selezionare *Storage System View*, quindi fare clic su *Switch*.
+
+
+.Risultato
+Cloud Manager passa alla vista volume.

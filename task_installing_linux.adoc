@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: task_installing_linux.html 
+keywords: install, installation, installing, linux, installer, software, on prem, on-prem, silent 
+summary: Il modo più comune per implementare Cloud Manager è da Cloud Central o dal mercato di un cloud provider. Tuttavia, è possibile scaricare e installare il software Cloud Manager su un host Linux esistente nella rete o nel cloud. 
+---
+= Installazione di Cloud Manager su un host Linux esistente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il modo più comune per implementare Cloud Manager è da Cloud Central o dal mercato di un cloud provider. Tuttavia, è possibile scaricare e installare il software Cloud Manager su un host Linux esistente nella rete o nel cloud.
+
+.Prima di iniziare
+* Un sistema Red Hat Enterprise Linux deve essere registrato con Red Hat Subscription Management. Se non è registrato, il sistema non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione di Cloud Manager.
+* Il programma di installazione di Cloud Manager accede a diversi URL durante il processo di installazione. È necessario assicurarsi che l'accesso a Internet in uscita sia consentito a tali endpoint. Fare riferimento a. link:reference_networking_cloud_manager.html["Requisiti di rete per Cloud Manager"].
+
+
+.A proposito di questa attività
+* Per installare Cloud Manager non sono necessari i privilegi di root.
+* Cloud Manager installa gli strumenti della riga di comando AWS (awscli) per abilitare le procedure di recovery dal supporto NetApp.
++
+Se viene visualizzato un messaggio che indica che l'installazione di awscli non è riuscita, ignorare il messaggio. Cloud Manager può funzionare correttamente senza gli strumenti.
+
+* Il programma di installazione disponibile sul NetApp Support Site potrebbe essere una versione precedente. Dopo l'installazione, Cloud Manager si aggiorna automaticamente se è disponibile una nuova versione.
+
+
+.Fasi
+. Verifica dei requisiti di rete:
++
+** link:reference_networking_cloud_manager.html["Requisiti di rete per Cloud Manager"]
+** link:reference_networking_aws.html["Requisiti di rete per Cloud Volumes ONTAP per AWS"]
+** link:reference_networking_azure.html["Requisiti di rete per Cloud Volumes ONTAP for Azure"]
+
+
+. Revisione link:reference_cloud_mgr_reqs.html["Requisiti degli host di Cloud Manager"].
+. Scaricare il software dal http://["Sito di supporto NetApp"^], Quindi copiarlo sull'host Linux.
++
+Per informazioni sulla connessione e la copia del file in un'istanza EC2 in AWS, vedere http://["Documentazione AWS: Connessione all'istanza Linux tramite SSH"^].
+
+. Assegnare le autorizzazioni per eseguire lo script.
++
+*Esempio*
+
++
+ chmod +x OnCommandCloudManager-V3.6.3.sh
+. Eseguire lo script di installazione:
++
+ ./OnCommandCloudManager-V3.6.3.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
++
+_silent_ esegue l'installazione senza richiedere informazioni.
+
++
+_Proxy_ è richiesto se l'host Cloud Manager si trova dietro un server proxy.
+
++
+_proxyport_ è la porta del server proxy.
+
++
+_proxyuser_ è il nome utente del server proxy, se è richiesta l'autenticazione di base.
+
++
+_proxypwd_ è la password per il nome utente specificato.
+
+. A meno che non sia stato specificato il parametro silent, digitare *Y* per continuare lo script, quindi immettere le porte HTTP e HTTPS quando richiesto.
++
+Se si modificano le porte HTTP e HTTPS, assicurarsi che gli utenti possano accedere alla console Web di Cloud Manager da un host remoto:
+
++
+** Modificare il gruppo di sicurezza per consentire le connessioni in entrata attraverso le porte.
+** Specificare la porta quando si immette l'URL nella console Web di Cloud Manager.
++
+Cloud Manager è ora installato. Al termine dell'installazione, il servizio Cloud Manager (occm) viene riavviato due volte se è stato specificato un server proxy.
+
+
+
+. Aprire un browser Web e immettere il seguente URL:
++
+https://[]
+
++
+_Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pubblico, a seconda della configurazione dell'host Cloud Manager. Ad esempio, se Cloud Manager si trova nel cloud pubblico senza un indirizzo IP pubblico, è necessario inserire un indirizzo IP privato da un host che ha una connessione all'host Cloud Manager.
+
++
+_Port_ è obbligatorio se sono state modificate le porte HTTP (80) o HTTPS (443) predefinite. Ad esempio, se la porta HTTPS è stata modificata in 8443, immettere https://[]
+
+. Iscriviti a un account NetApp Cloud Central o effettua l'accesso se ne hai già uno.
+. Al momento dell'iscrizione o dell'accesso, Cloud Manager aggiunge automaticamente l'account utente come amministratore del sistema.
+. Dopo aver effettuato l'accesso, immettere un nome per il sistema Cloud Manager.
+
+
+.Al termine
+Imposta le autorizzazioni per i tuoi account AWS e Azure in modo che Cloud Manager possa implementare Cloud Volumes ONTAP:
+
+* Se si desidera implementare Cloud Volumes ONTAP in AWS, link:task_adding_cloud_accounts.html["Configurare un account AWS e aggiungerlo a Cloud Manager"].
+* Se si desidera implementare Cloud Volumes ONTAP in Azure, link:task_adding_cloud_accounts.html#setting-up-and-adding-azure-accounts-to-cloud-manager["Configura un account Azure e aggiungilo a Cloud Manager"].
+

@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: reference_legal_notices.html 
+keywords: copyrights, notice, trademarks, patents, privacy, open source 
+summary: 'Le note legali forniscono l"accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.' 
+---
+= Note legali
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.
+
+
+
+== Copyright
+
+http://[]
+
+
+
+== Marchi
+
+NETAPP, il logo NETAPP e i marchi elencati nella pagina dei marchi NetApp sono marchi di NetApp, Inc. Altri nomi di società e prodotti potrebbero essere marchi dei rispettivi proprietari.
+
+http://[]
+
+
+
+== Brevetti
+
+Un elenco aggiornato dei brevetti di proprietà di NetApp è disponibile all'indirizzo:
+
+https://[]
+
+
+
+== Direttiva sulla privacy
+
+https://[]
+
+
+
+== Open source
+
+I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.
+
+* link:media/notice_cloud_manager_3.6.6.pdf["Avviso per OnCommand Cloud Manager 3.6.6"^]
+* link:media/notice_cloud_manager_3.6.1.pdf["Avviso per OnCommand Cloud Manager 3.6.1"^]
+* link:media/notice_cloud_manager_3.6.pdf["Avviso per OnCommand Cloud Manager 3.6"^]
+

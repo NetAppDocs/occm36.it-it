@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: reference_additional_info.html 
+keywords: community, forums, help, support, videos, policies, json, api, ontap, release notes, bugs, limitations, known issues, permissions, apis 
+summary: Puoi ottenere aiuto e ottenere ulteriori informazioni su Cloud Manager e Cloud Volumes ONTAP attraverso varie risorse, tra cui video, forum e supporto. 
+---
+= Dove trovare assistenza e ulteriori informazioni
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi ottenere aiuto e ottenere ulteriori informazioni su Cloud Manager e Cloud Volumes ONTAP attraverso varie risorse, tra cui video, forum e supporto.
+
+* https://["Video per Cloud Manager e Cloud Volumes ONTAP"^]
++
+Guarda i video che mostrano come implementare e gestire Cloud Volumes ONTAP in AWS e Azure e come replicare i dati nel tuo cloud ibrido.
+
+* http://["Policy per Cloud Manager"^]
++
+Scarica i file JSON che includono le autorizzazioni necessarie a Cloud Manager per eseguire azioni in AWS e Azure.
+
+* link:api.html["Guida per sviluppatori API di Cloud Manager"^]
++
+Leggi una panoramica delle API, esempi di come utilizzarle e un riferimento API.
+
+* Training per Cloud Volumes ONTAP
++
+** https://["Nozioni di base su Cloud Volumes ONTAP"^]
+** https://["Implementazione e gestione di Cloud Volumes ONTAP per Azure"^]
+
+
+* Report tecnici
++
+** https://["Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni"^]
+** https://["Report tecnico di NetApp 4671: Caratterizzazione delle performance di Cloud Volumes ONTAP in Azure con carichi di lavoro applicativi"^]
+
+
+* https://["Guida rapida alla preparazione del disaster recovery per Cloud Volumes ONTAP 9 SVM"^]
++
+Descrive come configurare rapidamente una SVM di destinazione in preparazione al disaster recovery.
+
+* https://["Guida rapida al disaster recovery di Cloud Volumes ONTAP 9 SVM"^]
++
+Descrive come attivare rapidamente una SVM di destinazione dopo un disastro e riattivare la SVM di origine.
+
+* http://["Centro documentazione di ONTAP 9"^]
++
+Accedi alla documentazione del prodotto per ONTAP, che può aiutarti a utilizzare Cloud Volumes ONTAP.
+
+* https://["Supporto NetApp Cloud Volumes ONTAP"^]
++
+Accedi alle risorse di supporto per ottenere assistenza e risolvere i problemi relativi a Cloud Volumes ONTAP.
+
+* https://["Community NetApp: Servizi dati cloud"^]
++
+Connettiti con i colleghi, fai domande, scambia idee, trova risorse e condividi le Best practice.
+
+* http://["NetApp Cloud Central"^]
++
+Informazioni su ulteriori prodotti e soluzioni NetApp per il cloud.
+
+* http://["Documentazione sui prodotti NetApp"^]
++
+Cerca nella documentazione dei prodotti NetApp istruzioni, risorse e risposte.
+
+

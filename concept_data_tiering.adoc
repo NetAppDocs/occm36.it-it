@@ -1,0 +1,129 @@
+---
+sidebar: sidebar 
+permalink: concept_data_tiering.html 
+keywords: storage tiering, tier, tiering, data tiering, s3, s3 tiering, capacity, performance, s3 endpoint, fabric pool, fabricpool, s3 bucket, requirement, vpc endpoint, policy, policies, tiering policies, auto, snapshot only, backup, none, cooling period, volume tiering policies, blob, standard, infrequent access, hot, cool, tiering level, storage tier, storage class 
+summary: È possibile ridurre i costi di storage abilitando il tiering automatizzato dei dati cold in uno storage a oggetti a basso costo. 
+---
+= Panoramica sul tiering dei dati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi ridurre i costi di storage abilitando il tiering automatizzato dei dati inattivi su storage a oggetti a basso costo. I dati attivi rimangono in SSD o HDD ad alte prestazioni (il Tier di performance), mentre i dati inattivi vengono suddivisi in livelli per lo storage a oggetti a basso costo (il Tier di capacità). In questo modo è possibile recuperare spazio sullo storage primario e ridurre lo storage secondario.
+
+Cloud Volumes ONTAP supporta il tiering dei dati in AWS e in Microsoft Azure. Il tiering dei dati è basato sulla tecnologia FabricPool.
+
+
+NOTE: Non è necessario installare una licenza per le funzionalità per attivare il tiering dei dati.
+
+
+
+== Funzionamento del tiering dei dati in AWS
+
+Quando si abilita il tiering dei dati in AWS, Cloud Volumes ONTAP utilizza EBS come Tier di performance per i dati hot e AWS S3 come Tier di capacità per i dati inattivi:
+
+image:diagram_storage_tiering.png["Si tratta di un'immagine concettuale che mostra i dati hot che vanno allo storage EBS e i dati inattivi che vanno allo storage S3."]
+
+
+
+=== Tier di performance in AWS
+
+Il livello di performance può essere SSD General Purpose, SSD IOPS con provisioning o HDD ottimizzati per il throughput.
+
+
+
+=== Tier di capacità in AWS
+
+Per impostazione predefinita, Cloud Volumes ONTAP esegue il Tier dei dati inattivi nella classe di storage S3 _Standard_. Standard è ideale per i dati ad accesso frequente memorizzati in più zone di disponibilità.
+
+Se non si prevede di accedere ai dati inattivi, è possibile ridurre i costi di storage modificando il livello di tiering di un sistema in uno dei seguenti modi, dopo aver implementato Cloud Volumes ONTAP:
+
+Tiering intelligente:: Ottimizza i costi dello storage spostando i dati tra due livelli man mano che cambiano i modelli di accesso ai dati. Un livello è per l'accesso frequente e l'altro per l'accesso non frequente.
+Accesso non frequente a una sola zona:: Per i dati ad accesso non frequente memorizzati in una singola zona di disponibilità.
+Standard-infrequent Access (accesso standard-non frequente):: Per i dati ad accesso non frequente memorizzati in più zone di disponibilità.
+
+
+I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sulle classi di storage S3, fare riferimento a. https://["Documentazione AWS"^].
+
+Quando si modifica il livello di tiering, i dati inattivi iniziano nella classe di storage Standard e vengono spostati nella classe di storage selezionata, se non si accede ai dati dopo 30 giorni. Per ulteriori informazioni sulla modifica del livello di tiering, vedere link:task_tiering.html["Tiering dei dati inattivi su storage a oggetti a basso costo"].
+
+Il livello di tiering è esteso a livello di sistema, non per volume.
+
+
+NOTE: Un ambiente di lavoro Cloud Volumes ONTAP utilizza un bucket S3 per tutti i dati a più livelli del sistema. Non viene utilizzato un bucket S3 diverso per ciascun volume. Ciò include un ambiente di lavoro ha. Cloud Manager crea un bucket S3 e lo nomina fabric-pool-_cluster unique identifier_.
+
+
+
+== Funzionamento del tiering dei dati in Microsoft Azure
+
+Quando abiliti il tiering dei dati in Azure, Cloud Volumes ONTAP utilizza i dischi gestiti da Azure come Tier di performance per i dati hot e lo storage Azure Blob come Tier di capacità per i dati inattivi:
+
+image:diagram_storage_tiering_azure.png["Si tratta di un'immagine concettuale che mostra i dati hot che vengono trasmessi ai dischi gestiti da Azure e i dati inattivi che vengono trasmessi allo storage Azure Blob."]
+
+
+
+=== Tier di performance in Azure
+
+Il Tier di performance può essere Premium Storage (SSD) o Standard Storage (HDD).
+
+
+
+=== Tier di capacità in Azure
+
+Per impostazione predefinita, Cloud Volumes ONTAP esegue il Tier dei dati inattivi nel Tier di storage Azure _hot_, ideale per i dati ad accesso frequente.
+
+Se non si prevede di accedere ai dati inattivi, è possibile ridurre i costi di storage modificando il livello di tiering di un sistema nel Tier di storage Azure _COOL_ dopo aver implementato Cloud Volumes ONTAP. Il cool Tier è ideale per i dati ad accesso non frequente che risiedono nel Tier per almeno 30 giorni.
+
+I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sui Tier di storage Azure Blob, fare riferimento a. https://["Documentazione di Azure"^].
+
+Quando si modifica il livello di tiering, i dati inattivi vengono avviati nel livello di hot storage e spostati nel livello di cool storage, se non si accede ai dati dopo 30 giorni. Per ulteriori informazioni sulla modifica del livello di tiering, vedere link:task_tiering.html["Tiering dei dati inattivi su storage a oggetti a basso costo"].
+
+Il livello di tiering è esteso a livello di sistema, non per volume.
+
+
+NOTE: Un ambiente di lavoro Cloud Volumes ONTAP utilizza un container di Azure Blob per tutti i dati a più livelli del sistema. Non viene utilizzato un container diverso per ciascun volume. Cloud Manager crea un nuovo account storage con un container per ogni sistema Cloud Volumes ONTAP. Il nome dell'account di storage è casuale.
+
+
+
+== In che modo il tiering dei dati influisce sui limiti di capacità
+
+Se si abilita il tiering dei dati, il limite di capacità di un sistema rimane invariato. Il limite viene distribuito tra il Tier di performance e il Tier di capacità.
+
+
+
+== Policy di tiering dei volumi
+
+Per attivare il tiering dei dati, è necessario selezionare una policy di tiering dei volumi quando si crea, modifica o replica un volume. È possibile selezionare un criterio diverso per ciascun volume.
+
+Alcuni criteri di tiering hanno un periodo di raffreddamento minimo associato, che imposta il tempo in cui i dati dell'utente in un volume devono rimanere inattivi per essere considerati "freddi" e spostati al livello di capacità.
+
+Cloud Volumes ONTAP supporta i seguenti criteri di tiering:
+
+Solo Snapshot:: Dopo che un aggregato ha raggiunto la capacità del 50%, Cloud Volumes ONTAP esegue il Tier dei dati cold user delle copie Snapshot non associate al file system attivo al Tier di capacità. Il periodo di raffreddamento è di circa 2 giorni.
++
+--
+In lettura, i blocchi di dati cold sul Tier di capacità diventano hot e vengono spostati sul Tier di performance.
+
+--
+Automatico:: Dopo che un aggregato ha raggiunto la capacità del 50%, Cloud Volumes ONTAP esegue il Tier dei blocchi di dati cold in un volume fino a raggiungere un livello di capacità. I dati cold non includono solo le copie Snapshot, ma anche i dati cold user dal file system attivo. Il periodo di raffreddamento è di circa 31 giorni.
++
+--
+Questo criterio è supportato a partire da Cloud Volumes ONTAP 9.4.
+
+Se letti in modo casuale, i blocchi di dati cold nel Tier di capacità diventano hot e passano al Tier di performance. Se letti in base a letture sequenziali, come quelle associate a scansioni di indice e antivirus, i blocchi di dati cold rimangono freddi e non passano al livello di performance.
+
+--
+Backup:: Quando si replica un volume per il disaster recovery o la conservazione a lungo termine, i dati del volume di destinazione iniziano nel Tier di capacità. Se si attiva il volume di destinazione, i dati si spostano gradualmente al livello di performance man mano che vengono letti.
+Nessuno:: Mantiene i dati di un volume nel Tier di performance, evitando che vengano spostati nel Tier di capacità.
+
+
+
+
+== Impostazione del tiering dei dati
+
+Per istruzioni e un elenco delle configurazioni supportate, vedere link:task_tiering.html["Tiering dei dati inattivi su storage a oggetti a basso costo"].

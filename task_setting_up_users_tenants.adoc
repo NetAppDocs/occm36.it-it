@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task_setting_up_users_tenants.html 
+keywords: users, adding, creating, tenants 
+summary: Cloud Manager consente di aggiungere altri utenti Cloud Central a Cloud Manager e di isolare gli ambienti di lavoro utilizzando i tenant. 
+---
+= Configurazione di utenti e tenant
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager consente di aggiungere altri utenti Cloud Central a Cloud Manager e di isolare gli ambienti di lavoro utilizzando i tenant.
+
+
+
+== Aggiunta di utenti a Cloud Manager
+
+Se altri utenti devono utilizzare il sistema Cloud Manager, devono iscriversi a un account in NetApp Cloud Central. È quindi possibile aggiungere gli utenti a Cloud Manager.
+
+.Fasi
+. Se l'utente non dispone ancora di un account in NetApp Cloud Central, invia un link al tuo sistema Cloud Manager e fai in modo che si iscriva.
++
+Attendere che l'utente confermi di aver effettuato la registrazione a un account.
+
+. In Cloud Manager, fare clic sull'icona dell'utente, quindi fare clic su *View Users* (Visualizza utenti).
+. Fare clic su *New User* (nuovo utente).
+. Inserire l'indirizzo e-mail associato all'account utente, selezionare un ruolo e fare clic su *Aggiungi*.
+
+
+.Quali sono le prossime novità?
+Informare l'utente che ora può accedere al sistema Cloud Manager.
+
+
+
+== Creazione di tenant
+
+I tenant consentono di isolare gli ambienti di lavoro in gruppi separati. Si creano uno o più ambienti di lavoro all'interno di un tenant. link:concept_storage_management.html#storage-isolation-using-tenants["Scopri di più sui tenant"].
+
+.Fasi
+. Fare clic sull'icona dei tenant, quindi su *Aggiungi tenant*.
++
+image:screenshot_tenants_icon.gif["Schermata: Mostra l'icona del tenant (un pulsante) e il pulsante Add tenant (Aggiungi tenant), disponibili nella parte superiore destra della console di Cloud Manager."]
+
+. Immettere un nome, una descrizione e un centro di costo, se necessario.
+. Fare clic su *Save* (Salva).
+
+
+.Quali sono le prossime novità?
+Ora puoi passare a questo nuovo tenant e aggiungere gli amministratori tenant e gli amministratori dell'ambiente di lavoro a questo tenant.

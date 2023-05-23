@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_backing_up_restoring.html 
+keywords: backing up, back up, backup, restore, restoring 
+summary: Cloud Manager consente di eseguire il backup e il ripristino del database per proteggere la configurazione e risolvere i problemi. 
+---
+= Backup e ripristino di Cloud Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager consente di eseguire il backup e il ripristino del database per proteggere la configurazione e risolvere i problemi.
+
+
+
+== Backup di Cloud Manager
+
+È buona norma eseguire il backup periodico del database Cloud Manager. In caso di problemi, è possibile ripristinare Cloud Manager da un backup precedente.
+
+.Fasi
+. Nella parte superiore destra della console di Cloud Manager, fare clic sull'elenco a discesa delle attività, quindi selezionare *Strumenti*.
+. Fare clic su *Backup*.
++
+image:screenshot_backup.gif["Schermata: Mostra il pulsante Backup nella pagina Tools (Strumenti)."]
+
+. Quando richiesto, salvare il file di backup in una posizione sicura in modo da poterlo recuperare quando necessario.
+
+
+
+
+== Ripristino di Cloud Manager da un backup
+
+Il ripristino di Cloud Manager da un backup sostituisce i dati esistenti con quelli del backup.
+
+.Fasi
+. Nell'angolo in alto a destra della console di Cloud Manager, fare clic sull'elenco a discesa delle attività, quindi selezionare *Strumenti*.
+. Fare clic su *Restore* (Ripristina).
+. Fare clic su *OK* per confermare.
+. Selezionare il backup.
+
+
+.Risultato
+Cloud Manager ripristina il database dal file di backup.

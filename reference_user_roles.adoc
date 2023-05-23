@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: reference_user_roles.html 
+keywords: user, role, task, permission, permissions, tasks, roles, admin, cloud manager admin, admin, tenant admin, working environment admin 
+summary: A ciascun account utente di Cloud Manager viene assegnato un ruolo che definisce le autorizzazioni. 
+---
+= Ruoli utente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A ciascun account utente di Cloud Manager viene assegnato un ruolo che definisce le autorizzazioni.
+
+[cols="25,25,25,25"]
+|===
+| Attività | Amministratore di Cloud Manager | Amministratore tenant | Amministratore dell'ambiente di lavoro 
+
+
+| Gestire i tenant | Sì | No | No 
+
+
+| Gestire gli ambienti di lavoro | Sì | Sì, per il tenant assegnato | Sì, per ambienti di lavoro assegnati 
+
+
+| Integra un ambiente di lavoro con Cloud Sync | Sì | Sì | No 
+
+
+| Visualizzare lo stato della replica dei dati | Sì | Sì, per il tenant assegnato | Sì, per ambienti di lavoro assegnati 
+
+
+| Visualizza la timeline | Sì | Sì | Sì 
+
+
+| Creare ed eliminare gli account utente | Sì | Sì, per il tenant assegnato | No 
+
+
+| Modificare gli account utente | Sì | Sì, per il tenant assegnato | Sì, per il proprio account 
+
+
+| Gestire le impostazioni dell'account | Sì | No | No 
+
+
+| Configurare Kubernetes | Sì | No | No 
+
+
+| Passare dalla visualizzazione del sistema di storage a quella del volume | Sì | No | No 
+
+
+| Modificare le impostazioni | Sì | No | No 
+
+
+| Visualizza e gestisci la dashboard di supporto | Sì | No | No 
+
+
+| Backup e ripristino di Cloud Manager | Sì | No | No 
+
+
+| Rimuovere un ambiente di lavoro | Sì | No | No 
+
+
+| Aggiorna Cloud Manager | Sì | No | No 
+
+
+| Installare un certificato HTTPS | Sì | No | No 
+
+
+| Configurare Active Directory | Sì | No | No 
+
+
+| Attiva il Cloud Storage Automation Report | Sì | No | No 
+|===

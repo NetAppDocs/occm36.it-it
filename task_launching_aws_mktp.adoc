@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task_launching_aws_mktp.html 
+keywords: install, installation, installing, marketplace, aws, launch, launching, ec2 console 
+summary: È consigliabile avviare Cloud Manager in AWS utilizzando NetApp Cloud Central, ma è possibile avviarlo da AWS Marketplace, se necessario. 
+---
+= Avvio di Cloud Manager da AWS Marketplace
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si consiglia di avviare Cloud Manager in AWS utilizzando https://["NetApp Cloud Central"^], Ma è possibile avviarlo da AWS Marketplace, se necessario.
+
+
+TIP: Se lanciate Cloud Manager da AWS Marketplace, Cloud Manager è ancora integrato con NetApp Cloud Central. link:concept_cloud_central.html["Scopri di più sull'integrazione"].
+
+.A proposito di questa attività
+La seguente procedura descrive come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza di Cloud Manager. Ciò non è possibile utilizzando l'opzione 1-click.
+
+.Fasi
+. Creare un criterio e un ruolo IAM per l'istanza EC2:
++
+.. Scarica la policy IAM di Cloud Manager dal seguente percorso:
++
+https://["Cloud manager di NetApp OnCommand: Policy AWS e Azure"^]
+
+.. Dalla console IAM, creare la propria policy copiando e incollando il testo dalla policy IAM di Cloud Manager.
+.. Creare un ruolo IAM con il tipo di ruolo Amazon EC2 e allegare al ruolo il criterio creato nel passaggio precedente.
+
+
+. Accedere alla https://["Pagina Cloud Manager su AWS Marketplace"^].
+. Fare clic su *continua*.
+. Nella scheda Custom Launch (Avvio personalizzato), fare clic su *Launch with EC2 Console* (Avvia con console EC2) per la propria area geografica, quindi effettuare le seguenti selezioni:
++
+.. A seconda della disponibilità della regione, scegliere il tipo di istanza t3.medium (consigliato), t2.medium o m4.Large.
+.. Selezionare un VPC, una subnet, un ruolo IAM e altre opzioni di configurazione che soddisfino i propri requisiti.
+.. Mantenere le opzioni di storage predefinite.
+.. Se necessario, inserire i tag per l'istanza.
+.. Specificare i metodi di connessione richiesti per l'istanza di Cloud Manager: SSH, HTTP e HTTPS.
+.. Fare clic su *Avvia*.
+
+
+
+
+.Risultato
+AWS avvia il software con le impostazioni specificate. L'istanza e il software di Cloud Manager dovrebbero essere in esecuzione in circa cinque minuti.
+
+.Al termine
+Accedere a Cloud Manager immettendo l'indirizzo IP pubblico o privato in un browser Web, quindi completare l'installazione guidata.
