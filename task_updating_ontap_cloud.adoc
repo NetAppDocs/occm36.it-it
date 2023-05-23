@@ -77,7 +77,7 @@ Gli aggiornamenti delle coppie ha non sono disgregativi. Un upgrade senza interr
 
 La versione di ONTAP che è possibile aggiornare o eseguire il downgrade varia in base alla versione di ONTAP attualmente in esecuzione nel sistema.
 
-Per informazioni sui requisiti di versione, fare riferimento a. http://["Documentazione di ONTAP 9: Requisiti per l'aggiornamento del cluster"^].
+Per informazioni sui requisiti di versione, fare riferimento a. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-dot-upgrade/GUID-AC0EB781-583F-4C90-A4C4-BC7B14CEFD39.html["Documentazione di ONTAP 9: Requisiti per l'aggiornamento del cluster"^].
 
 
 
@@ -172,7 +172,7 @@ Se sono state sospese le trasferte SnapMirror, utilizzare System Manager per rip
 
 NOTE: Per impostazione predefinita, il gruppo di protezione Cloud Volumes ONTAP predefinito consente le connessioni HTTP e FTP in uscita.
 
-. Ottenere l'immagine software da https://["Il sito di supporto NetApp"^].
+. Ottenere l'immagine software da https://mysupport.netapp.com/products/p/cloud_ontap.html["Il sito di supporto NetApp"^].
 . Copiare l'immagine del software nella directory del server HTTP o FTP da cui verrà servito il file.
 . Dall'ambiente di lavoro in Cloud Manager, fare clic sull'icona del menu, quindi fare clic su *Avanzate > Aggiorna Cloud Volumes ONTAP*.
 . Nella pagina di aggiornamento del software, scegliere *selezionare un'immagine disponibile da un URL*, immettere l'URL, quindi fare clic su *Cambia immagine*.

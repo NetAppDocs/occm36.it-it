@@ -37,7 +37,7 @@ Questo passaggio è importante perché Cloud Manager non può implementare Cloud
 === image:number2.png["Numero 2"] Iscriviti a Cloud Volumes ONTAP dal marketplace AWS
 
 [role="quick-margin-para"]
-Iscrizione da https://["AWS Marketplace"^] è necessario accettare i termini del software. Devi solo iscriverti al Marketplace. L'avvio di Cloud Volumes ONTAP da qualsiasi luogo, ma non è supportato.
+Iscrizione da https://aws.amazon.com/marketplace/search/results?page=1&searchTerms=netapp+cloud+volumes+ontap["AWS Marketplace"^] è necessario accettare i termini del software. Devi solo iscriverti al Marketplace. L'avvio di Cloud Volumes ONTAP da qualsiasi luogo, ma non è supportato.
 
 
 
@@ -47,7 +47,7 @@ Iscrizione da https://["AWS Marketplace"^] è necessario accettare i termini del
 Quando si implementa Cloud Manager da NetApp Cloud Central, è necessario utilizzare un account AWS che disponga delle autorizzazioni necessarie per implementare l'istanza.
 
 [role="quick-margin-list"]
-. Accedere alla console AWS IAM e creare un criterio copiando e incollando il contenuto di https://["Policy NetApp Cloud Central per AWS"^].
+. Accedere alla console AWS IAM e creare un criterio copiando e incollando il contenuto di https://mysupport.netapp.com/cloudontap/iampolicies["Policy NetApp Cloud Central per AWS"^].
 . Allegare il criterio all'utente IAM.
 
 
@@ -56,7 +56,7 @@ Quando si implementa Cloud Manager da NetApp Cloud Central, è necessario utiliz
 === image:number4.png["Numero 4"] Lanciate Cloud Manager da NetApp Cloud Central
 
 [role="quick-margin-para"]
-Il software Cloud Manager è necessario per implementare e gestire Cloud Volumes ONTAP. L'avvio di un'istanza di Cloud Manager richiede pochi minuti https://["Cloud Central"^].
+Il software Cloud Manager è necessario per implementare e gestire Cloud Volumes ONTAP. L'avvio di un'istanza di Cloud Manager richiede pochi minuti https://cloud.netapp.com["Cloud Central"^].
 
 
 

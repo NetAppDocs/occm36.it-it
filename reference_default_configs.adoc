@@ -79,7 +79,7 @@ NOTE: Il failover LIF è disattivato per impostazione predefinita per Cloud Volu
 
 
 * Cloud Volumes ONTAP invia i backup della configurazione a Cloud Manager utilizzando HTTPS.
-* Una volta effettuato l'accesso a Cloud Manager, i backup sono accessibili da https://[]
+* Una volta effettuato l'accesso a Cloud Manager, i backup sono accessibili da https://ipaddress/occm/offboxconfig/[]
 * Cloud Manager imposta alcuni attributi di volume in modo diverso rispetto ad altri strumenti di gestione (ad esempio, System Manager o CLI).
 +
 La tabella seguente elenca gli attributi del volume impostati da Cloud Manager in modo diverso dai valori predefiniti:

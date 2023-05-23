@@ -14,7 +14,7 @@ summary: È consigliabile avviare Cloud Manager in AWS utilizzando NetApp Cloud 
 
 
 [role="lead"]
-Si consiglia di avviare Cloud Manager in AWS utilizzando https://["NetApp Cloud Central"^], Ma è possibile avviarlo da AWS Marketplace, se necessario.
+Si consiglia di avviare Cloud Manager in AWS utilizzando https://cloud.netapp.com["NetApp Cloud Central"^], Ma è possibile avviarlo da AWS Marketplace, se necessario.
 
 
 TIP: Se lanciate Cloud Manager da AWS Marketplace, Cloud Manager è ancora integrato con NetApp Cloud Central. link:concept_cloud_central.html["Scopri di più sull'integrazione"].
@@ -27,13 +27,13 @@ La seguente procedura descrive come avviare l'istanza dalla console EC2 perché 
 +
 .. Scarica la policy IAM di Cloud Manager dal seguente percorso:
 +
-https://["Cloud manager di NetApp OnCommand: Policy AWS e Azure"^]
+https://mysupport.netapp.com/cloudontap/iampolicies["Cloud manager di NetApp OnCommand: Policy AWS e Azure"^]
 
 .. Dalla console IAM, creare la propria policy copiando e incollando il testo dalla policy IAM di Cloud Manager.
 .. Creare un ruolo IAM con il tipo di ruolo Amazon EC2 e allegare al ruolo il criterio creato nel passaggio precedente.
 
 
-. Accedere alla https://["Pagina Cloud Manager su AWS Marketplace"^].
+. Accedere alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina Cloud Manager su AWS Marketplace"^].
 . Fare clic su *continua*.
 . Nella scheda Custom Launch (Avvio personalizzato), fare clic su *Launch with EC2 Console* (Avvia con console EC2) per la propria area geografica, quindi effettuare le seguenti selezioni:
 +

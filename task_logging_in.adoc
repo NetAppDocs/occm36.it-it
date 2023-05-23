@@ -14,10 +14,10 @@ summary: 'È possibile accedere a Cloud Manager da qualsiasi browser Web che dis
 
 
 [role="lead"]
-È possibile accedere a Cloud Manager da qualsiasi browser Web che dispone di una connessione al sistema Cloud Manager. È necessario effettuare l'accesso utilizzando un https://["NetApp Cloud Central"^] account utente.
+È possibile accedere a Cloud Manager da qualsiasi browser Web che dispone di una connessione al sistema Cloud Manager. È necessario effettuare l'accesso utilizzando un https://cloud.netapp.com["NetApp Cloud Central"^] account utente.
 
 .Fasi
-. Aprire un browser Web e accedere a. https://["NetApp Cloud Central"^].
+. Aprire un browser Web e accedere a. https://cloud.netapp.com["NetApp Cloud Central"^].
 . Fare clic su *Vai ai servizi dati cloud* e selezionare *Cloud Volumes ONTAP*.
 . Fare clic su *Vai a Cloud Manager* per il sistema Cloud Manager a cui si desidera accedere.
 +

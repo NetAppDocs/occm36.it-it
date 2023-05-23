@@ -32,9 +32,9 @@ Cloud Manager aggiorna i costi quando aggiorni la pagina. Fare riferimento ad AW
 "ce:GetTags"
 ----
 +
-Queste azioni sono incluse nella versione più recente https://["Policy di Cloud Manager"^]. I nuovi sistemi implementati da NetApp Cloud Central includono automaticamente queste autorizzazioni.
+Queste azioni sono incluse nella versione più recente https://mysupport.netapp.com/cloudontap/iampolicies["Policy di Cloud Manager"^]. I nuovi sistemi implementati da NetApp Cloud Central includono automaticamente queste autorizzazioni.
 
-.. https://["Attivare il tag *WorkingEnvironmentId*"^].
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Attivare il tag *WorkingEnvironmentId*"^].
 +
 Per tenere traccia dei costi AWS, Cloud Manager assegna un tag di allocazione dei costi alle istanze di Cloud Volumes ONTAP. Dopo aver creato il primo ambiente di lavoro, attivare il tag *WorkingEnvironmentId*. I tag definiti dall'utente non vengono visualizzati nei report di fatturazione AWS finché non vengono attivati nella console di fatturazione e gestione dei costi.
 

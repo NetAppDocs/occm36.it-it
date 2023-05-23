@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["Un diagramma che mostra una configurazione ha
 La seguente procedura illustra come configurare una configurazione simile.
 
 .Fasi
-. https://["Creare un gateway di transito e collegare i VPC al gateway"^].
+. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["Creare un gateway di transito e collegare i VPC al gateway"^].
 . Creare le route nella tabella delle route del gateway di transito specificando gli indirizzi IP mobili della coppia ha.
 +
 Gli indirizzi IP mobili sono disponibili nella pagina Working Environment Information (informazioni sull'ambiente di lavoro) di Cloud Manager. Ecco un esempio:

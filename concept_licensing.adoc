@@ -37,7 +37,7 @@ image:screenshot_warning.gif["Schermata: Mostra un ambiente di lavoro Cloud Volu
 Se la licenza non viene rinnovata in tempo, il sistema Cloud Volumes ONTAP si spegne automaticamente. Se viene riavviato, si spegne di nuovo.
 
 
-NOTE: Cloud Volumes ONTAP può anche inviare notifiche tramite e-mail, un host trapSNMP o un server syslog utilizzando le notifiche degli eventi EMS (sistema di gestione degli eventi). Per istruzioni, consultare http://["Guida rapida alla configurazione EMS di ONTAP 9"^].
+NOTE: Cloud Volumes ONTAP può anche inviare notifiche tramite e-mail, un host trapSNMP o un server syslog utilizzando le notifiche degli eventi EMS (sistema di gestione degli eventi). Per istruzioni, consultare http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-ems/home.html["Guida rapida alla configurazione EMS di ONTAP 9"^].
 
 [discrete]
 === Rinnovo della licenza

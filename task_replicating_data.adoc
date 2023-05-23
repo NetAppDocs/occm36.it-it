@@ -104,7 +104,7 @@ Se si creano criteri personalizzati, le etichette definite da tali criteri devon
 
 Prima di poter replicare i dati, è necessario verificare che i requisiti specifici siano soddisfatti sia per i sistemi Cloud Volumes ONTAP che per i cluster ONTAP.
 
-Requisiti di versione:: Prima di eseguire la replica dei dati, verificare che i volumi di origine e di destinazione eseguano versioni ONTAP compatibili. Per ulteriori informazioni, vedere http://["Guida all'alimentazione per la protezione dei dati"^].
+Requisiti di versione:: Prima di eseguire la replica dei dati, verificare che i volumi di origine e di destinazione eseguano versioni ONTAP compatibili. Per ulteriori informazioni, vedere http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-dap/home.html["Guida all'alimentazione per la protezione dei dati"^].
 Requisiti specifici di Cloud Volumes ONTAP::
 +
 --
@@ -236,7 +236,7 @@ Consente di ripristinare una relazione interrotta tra i volumi e di riprendere l
 
 IMPORTANT: Quando si risincronizzano i volumi, i contenuti del volume di destinazione vengono sovrascritti dai contenuti del volume di origine.
 
-Per eseguire una risincronizzazione inversa, che risincronizza i dati dal volume di destinazione al volume di origine, vedere la http://["Guida rapida per il disaster recovery dei volumi di ONTAP 9"^].
+Per eseguire una risincronizzazione inversa, che risincronizza i dati dal volume di destinazione al volume di origine, vedere la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["Guida rapida per il disaster recovery dei volumi di ONTAP 9"^].
 
 
 

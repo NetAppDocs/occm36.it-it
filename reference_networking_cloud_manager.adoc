@@ -53,7 +53,7 @@ Servizi AWS (amazonaws.com):
 * S3 (Simple Storage Service)
 
 
-L'endpoint esatto dipende dalla regione in cui viene implementato Cloud Volumes ONTAP. https://["Per ulteriori informazioni, fare riferimento alla documentazione AWS."^]
+L'endpoint esatto dipende dalla regione in cui viene implementato Cloud Volumes ONTAP. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS."^]
 | Consente a Cloud Manager di implementare e gestire Cloud Volumes ONTAP in AWS. 
 
 

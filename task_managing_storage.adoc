@@ -48,7 +48,7 @@ Puoi gestire i volumi esistenti in base alle tue esigenze di storage. È possibi
 
 Questo processo crea un volume FlexClone. Un volume FlexClone è una copia point-in-time scrivibile efficiente in termini di spazio, in quanto utilizza una piccola quantità di spazio per i metadati e consuma solo spazio aggiuntivo quando i dati vengono modificati o aggiunti.
 
-Per ulteriori informazioni sui volumi FlexClone, vedere http://["Guida alla gestione dello storage logico di ONTAP 9"^].
+Per ulteriori informazioni sui volumi FlexClone, vedere http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["Guida alla gestione dello storage logico di ONTAP 9"^].
 
 
 
@@ -280,7 +280,7 @@ Per ulteriori informazioni, vedere link:task_replicating_data.html#managing-data
 
 . Configurare il volume per l'accesso ai dati.
 +
-Per informazioni sulla configurazione di un volume di destinazione per l'accesso ai dati, consultare http://["Guida rapida per il disaster recovery dei volumi di ONTAP 9"^].
+Per informazioni sulla configurazione di un volume di destinazione per l'accesso ai dati, consultare http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["Guida rapida per il disaster recovery dei volumi di ONTAP 9"^].
 
 . Eliminare il volume originale.
 +
@@ -321,6 +321,6 @@ Per ulteriori informazioni, vedere link:task_provisioning_storage.html#creating-
 . Utilizzare System Manager o CLI per spostare i volumi nell'aggregato.
 . Nella maggior parte dei casi, è possibile utilizzare System Manager per spostare i volumi.
 +
-Per istruzioni, consultare http://["Guida rapida per lo spostamento del volume di ONTAP 9"^].
+Per istruzioni, consultare http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["Guida rapida per lo spostamento del volume di ONTAP 9"^].
 
 

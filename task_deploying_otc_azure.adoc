@@ -50,7 +50,7 @@ La seguente tabella descrive i campi per i quali potrebbero essere necessarie in
 | Nome gruppo di risorse | Se si deseleziona l'opzione *Usa predefinito*, è possibile immettere il nome di un nuovo gruppo di risorse. Se si desidera utilizzare un gruppo di risorse esistente, è necessario utilizzare l'API. 
 
 
-| Tag | I tag sono metadati per le risorse Azure. Cloud Manager aggiunge i tag al sistema Cloud Volumes ONTAP e a ogni risorsa Azure associata al sistema. È possibile aggiungere fino a quattro tag dall'interfaccia utente durante la creazione di un ambiente di lavoro e aggiungerne altri dopo la creazione. Tenere presente che l'API non si limita a quattro tag durante la creazione di un ambiente di lavoro. Per informazioni sui tag, fare riferimento a. https://["Documentazione di Microsoft Azure: Utilizzo di tag per organizzare le risorse di Azure"^]. 
+| Tag | I tag sono metadati per le risorse Azure. Cloud Manager aggiunge i tag al sistema Cloud Volumes ONTAP e a ogni risorsa Azure associata al sistema. È possibile aggiungere fino a quattro tag dall'interfaccia utente durante la creazione di un ambiente di lavoro e aggiungerne altri dopo la creazione. Tenere presente che l'API non si limita a quattro tag durante la creazione di un ambiente di lavoro. Per informazioni sui tag, fare riferimento a. https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Documentazione di Microsoft Azure: Utilizzo di tag per organizzare le risorse di Azure"^]. 
 
 
 | Credenziali | Queste sono le credenziali per l'account amministratore del cluster Cloud Volumes ONTAP. È possibile utilizzare queste credenziali per connettersi a Cloud Volumes ONTAP tramite Gestore di sistema di OnCommand o la relativa CLI. 
@@ -177,7 +177,7 @@ Cloud Manager implementa il sistema Cloud Volumes ONTAP. Puoi tenere traccia dei
 
 In caso di problemi durante l'implementazione del sistema Cloud Volumes ONTAP, esaminare il messaggio di errore. È inoltre possibile selezionare l'ambiente di lavoro e fare clic su *Ricomcreare ambiente*.
 
-Per ulteriore assistenza, visitare il sito Web all'indirizzo https://["Supporto NetApp Cloud Volumes ONTAP"^].
+Per ulteriore assistenza, visitare il sito Web all'indirizzo https://mysupport.netapp.com/cloudontap["Supporto NetApp Cloud Volumes ONTAP"^].
 
 .Al termine
 * Se è stata fornita una condivisione CIFS, assegnare agli utenti o ai gruppi le autorizzazioni per i file e le cartelle e verificare che tali utenti possano accedere alla condivisione e creare un file.

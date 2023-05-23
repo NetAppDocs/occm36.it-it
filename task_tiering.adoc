@@ -50,11 +50,11 @@ image:diagram_tiering.gif["Diagramma che mostra il flusso di lavoro per l'abilit
 
 == Requisiti per il tiering dei dati in AWS
 
-Assicurarsi che Cloud Volumes ONTAP sia connesso a S3. Il modo migliore per fornire tale connessione consiste nella creazione di un endpoint VPC per il servizio S3. Per istruzioni, vedere https://["Documentazione AWS: Creazione di un endpoint gateway"^].
+Assicurarsi che Cloud Volumes ONTAP sia connesso a S3. Il modo migliore per fornire tale connessione consiste nella creazione di un endpoint VPC per il servizio S3. Per istruzioni, vedere https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentazione AWS: Creazione di un endpoint gateway"^].
 
 Quando si crea l'endpoint VPC, assicurarsi di selezionare la regione, il VPC e la tabella di routing che corrispondono all'istanza di Cloud Volumes ONTAP. È inoltre necessario modificare il gruppo di protezione per aggiungere una regola HTTPS in uscita che abilita il traffico all'endpoint S3. In caso contrario, Cloud Volumes ONTAP non può connettersi al servizio S3.
 
-In caso di problemi, vedere https://["AWS Support Knowledge Center: Perché non è possibile connettersi a un bucket S3 utilizzando un endpoint VPC gateway?"^].
+In caso di problemi, vedere https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Perché non è possibile connettersi a un bucket S3 utilizzando un endpoint VPC gateway?"^].
 
 
 
@@ -67,7 +67,7 @@ Non è necessario impostare una connessione tra il Tier di performance e il Tier
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Queste autorizzazioni sono incluse nella versione più recente https://["Policy di Cloud Manager"].
+Queste autorizzazioni sono incluse nella versione più recente https://mysupport.netapp.com/cloudontap/iampolicies["Policy di Cloud Manager"].
 
 
 

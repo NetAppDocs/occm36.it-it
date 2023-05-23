@@ -35,7 +35,7 @@ Cloud Volumes ONTAP supporta le seguenti tecnologie di crittografia:
 
 NetApp Volume Encryption (NVE) è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L'accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.
 
-Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in http://["Tool di matrice di interoperabilità NetApp"^] Nella soluzione *Key Manager*.
+Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^] Nella soluzione *Key Manager*.
 
 È possibile attivare NetApp Volume Encryption su un volume nuovo o esistente utilizzando CLI o System Manager. Cloud Manager non supporta NetApp Volume Encryption. Per istruzioni, vedere link:task_encrypting_volumes.html["Crittografia dei volumi con NetApp Volume Encryption"].
 
@@ -43,7 +43,7 @@ Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di 
 
 === Servizio di gestione delle chiavi AWS
 
-Quando si avvia un sistema Cloud Volumes ONTAP in AWS, è possibile attivare la crittografia dei dati utilizzando http://["AWS Key Management Service (KMS)"^]. Cloud Manager richiede le chiavi dati utilizzando una chiave master del cliente (CMK).
+Quando si avvia un sistema Cloud Volumes ONTAP in AWS, è possibile attivare la crittografia dei dati utilizzando http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service (KMS)"^]. Cloud Manager richiede le chiavi dati utilizzando una chiave master del cliente (CMK).
 
 Se si desidera utilizzare questa opzione di crittografia, assicurarsi che AWS KMS sia configurato correttamente. Per ulteriori informazioni, vedere link:task_setting_up_kms.html["Configurazione di AWS KMS"].
 
@@ -51,7 +51,7 @@ Se si desidera utilizzare questa opzione di crittografia, assicurarsi che AWS KM
 
 === Azure Storage Service Encryption
 
-https://["Azure Storage Service Encryption"^] Per i dati inattivi è attivato per impostazione predefinita per i dati Cloud Volumes ONTAP in Azure. Non è richiesta alcuna configurazione.
+https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure Storage Service Encryption"^] Per i dati inattivi è attivato per impostazione predefinita per i dati Cloud Volumes ONTAP in Azure. Non è richiesta alcuna configurazione.
 
 
 NOTE: Le chiavi gestite dal cliente non sono supportate con Cloud Volumes ONTAP.
@@ -64,9 +64,9 @@ NOTE: Le chiavi gestite dal cliente non sono supportate con Cloud Volumes ONTAP.
 
 La scansione antivirus di ONTAP, denominata _Vscan_, combina il software antivirus di terze parti più all'avanguardia con le funzionalità di ONTAP che offrono la flessibilità necessaria per controllare quali file vengono sottoposti a scansione e quando.
 
-Per informazioni su vendor, software e versioni supportate da Vscan, consultare http://["Matrice di interoperabilità NetApp"^].
+Per informazioni su vendor, software e versioni supportate da Vscan, consultare http://mysupport.netapp.com/matrix["Matrice di interoperabilità NetApp"^].
 
-Per informazioni su come configurare e gestire la funzionalità antivirus sui sistemi ONTAP, consultare http://["Guida alla configurazione antivirus di ONTAP 9"^].
+Per informazioni su come configurare e gestire la funzionalità antivirus sui sistemi ONTAP, consultare http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guida alla configurazione antivirus di ONTAP 9"^].
 
 
 

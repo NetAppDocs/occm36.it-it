@@ -14,7 +14,7 @@ summary: 'È possibile sincronizzare i dati dai volumi ONTAP a un bucket AWS S3 
 
 
 [role="lead"]
-È possibile sincronizzare i dati dai volumi ONTAP a un bucket AWS S3 integrando un ambiente di lavoro con https://["NetApp Cloud Sync"^]. È quindi possibile utilizzare i dati sincronizzati come copia secondaria o per l'elaborazione dei dati utilizzando servizi AWS come EMR e Redshift.
+È possibile sincronizzare i dati dai volumi ONTAP a un bucket AWS S3 integrando un ambiente di lavoro con https://www.netapp.com/us/cloud/data-sync-saas-product-details["NetApp Cloud Sync"^]. È quindi possibile utilizzare i dati sincronizzati come copia secondaria o per l'elaborazione dei dati utilizzando servizi AWS come EMR e Redshift.
 
 
 

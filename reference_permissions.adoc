@@ -14,7 +14,7 @@ summary: 'Cloud Manager richiede autorizzazioni per eseguire azioni in AWS e Azu
 
 
 [role="lead"]
-Cloud Manager richiede autorizzazioni per eseguire azioni in AWS e Azure per conto dell'utente. Queste autorizzazioni sono incluse in https://["Le policy fornite da NetApp"^]. Potresti voler capire cosa fa Cloud Manager con queste autorizzazioni.
+Cloud Manager richiede autorizzazioni per eseguire azioni in AWS e Azure per conto dell'utente. Queste autorizzazioni sono incluse in https://mysupport.netapp.com/info/web/ECMP11022837.html["Le policy fornite da NetApp"^]. Potresti voler capire cosa fa Cloud Manager con queste autorizzazioni.
 
 
 

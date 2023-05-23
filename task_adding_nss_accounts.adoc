@@ -20,7 +20,7 @@ Guarda il video seguente per scoprire come aggiungere gli account NetApp Support
 
 video::V2fLTyztqYQ[youtube,width=848,height=480]
 .Fasi
-. Se non disponi ancora di un account NetApp Support Site, http://["registratevi per uno"^].
+. Se non disponi ancora di un account NetApp Support Site, http://now.netapp.com/newuser/["registratevi per uno"^].
 . Nella parte superiore destra della console di Cloud Manager, fare clic sull'elenco a discesa delle attività, quindi selezionare *Impostazioni account*.
 . Fare clic su *Add New account* (Aggiungi nuovo account) e selezionare *NetApp Support Site* (Sito di supporto NetApp).
 . Specificare un nome per l'account, quindi immettere il nome utente e la password.

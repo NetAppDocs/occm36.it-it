@@ -36,7 +36,7 @@ Cloud Manager è supportato dalle versioni in lingua inglese di questi sistemi o
 
 
 --
-Hypervisor:: Un hypervisor bare metal o in hosting certificato per l'esecuzione di CentOS o Red Hat Enterprise Linuxhttps://["Soluzione Red Hat: Quali hypervisor sono certificati per eseguire Red Hat Enterprise Linux?"^]
+Hypervisor:: Un hypervisor bare metal o in hosting certificato per l'esecuzione di CentOS o Red Hat Enterprise Linuxhttps://access.redhat.com/certified-hypervisors["Soluzione Red Hat: Quali hypervisor sono certificati per eseguire Red Hat Enterprise Linux?"^]
 CPU:: 2.27 GHz o superiore con due core
 RAM:: 4 GB
 Spazio libero su disco:: 50 GB

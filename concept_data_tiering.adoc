@@ -48,7 +48,7 @@ Accesso non frequente a una sola zona:: Per i dati ad accesso non frequente memo
 Standard-infrequent Access (accesso standard-non frequente):: Per i dati ad accesso non frequente memorizzati in più zone di disponibilità.
 
 
-I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sulle classi di storage S3, fare riferimento a. https://["Documentazione AWS"^].
+I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sulle classi di storage S3, fare riferimento a. https://aws.amazon.com/s3/storage-classes["Documentazione AWS"^].
 
 Quando si modifica il livello di tiering, i dati inattivi iniziano nella classe di storage Standard e vengono spostati nella classe di storage selezionata, se non si accede ai dati dopo 30 giorni. Per ulteriori informazioni sulla modifica del livello di tiering, vedere link:task_tiering.html["Tiering dei dati inattivi su storage a oggetti a basso costo"].
 
@@ -79,7 +79,7 @@ Per impostazione predefinita, Cloud Volumes ONTAP esegue il Tier dei dati inatti
 
 Se non si prevede di accedere ai dati inattivi, è possibile ridurre i costi di storage modificando il livello di tiering di un sistema nel Tier di storage Azure _COOL_ dopo aver implementato Cloud Volumes ONTAP. Il cool Tier è ideale per i dati ad accesso non frequente che risiedono nel Tier per almeno 30 giorni.
 
-I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sui Tier di storage Azure Blob, fare riferimento a. https://["Documentazione di Azure"^].
+I costi di accesso sono più elevati se si accede ai dati, quindi è necessario prendere in considerazione questo aspetto prima di modificare il livello di tiering. Per ulteriori informazioni sui Tier di storage Azure Blob, fare riferimento a. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Documentazione di Azure"^].
 
 Quando si modifica il livello di tiering, i dati inattivi vengono avviati nel livello di hot storage e spostati nel livello di cool storage, se non si accede ai dati dopo 30 giorni. Per ulteriori informazioni sulla modifica del livello di tiering, vedere link:task_tiering.html["Tiering dei dati inattivi su storage a oggetti a basso costo"].
 

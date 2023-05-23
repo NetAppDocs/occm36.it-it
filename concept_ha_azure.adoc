@@ -59,7 +59,7 @@ Per le configurazioni NAS, gli indirizzi IP dei dati migrano automaticamente tra
 Per iSCSI, Cloud Volumes ONTAP utilizza MPIO (Multipath i/o) e ALUA (Asymmetric Logical Unit Access) per gestire il failover del percorso tra i percorsi ottimizzati per attività e non ottimizzati.
 
 
-NOTE: Per informazioni su quali configurazioni host specifiche supportano ALUA, consultare http://["Tool di matrice di interoperabilità NetApp"^] E la guida all'installazione e all'installazione delle utility host per il sistema operativo host.
+NOTE: Per informazioni su quali configurazioni host specifiche supportano ALUA, consultare http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^] E la guida all'installazione e all'installazione delle utility host per il sistema operativo host.
 
 
 
@@ -78,7 +78,7 @@ Le seguenti limitazioni influiscono sulle coppie Cloud Volumes ONTAP ha in Azure
 * NFSv4 non è supportato. NFSv3 è supportato.
 * Le coppie HA non sono supportate in alcune regioni.
 +
-https://["Consulta l'elenco delle aree Azure supportate"^].
+https://cloud.netapp.com/cloud-volumes-global-regions["Consulta l'elenco delle aree Azure supportate"^].
 
 
 

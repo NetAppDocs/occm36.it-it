@@ -20,7 +20,7 @@ Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevet
 
 == Copyright
 
-http://[]
+http://www.netapp.com/us/legal/copyright.aspx[]
 
 
 
@@ -28,7 +28,7 @@ http://[]
 
 NETAPP, il logo NETAPP e i marchi elencati nella pagina dei marchi NetApp sono marchi di NetApp, Inc. Altri nomi di società e prodotti potrebbero essere marchi dei rispettivi proprietari.
 
-http://[]
+http://www.netapp.com/us/legal/netapptmlist.aspx[]
 
 
 
@@ -36,13 +36,13 @@ http://[]
 
 Un elenco aggiornato dei brevetti di proprietà di NetApp è disponibile all'indirizzo:
 
-https://[]
+https://www.netapp.com/us/media/patents-page.pdf[]
 
 
 
 == Direttiva sulla privacy
 
-https://[]
+https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 
 

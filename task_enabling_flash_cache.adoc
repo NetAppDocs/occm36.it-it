@@ -29,6 +29,6 @@ NOTE: Il ripristino della cache dopo un riavvio non è supportato con Cloud Volu
 
 . Disattiva la compressione su tutti i volumi.
 +
-La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. Quando crei un volume da Cloud Manager, puoi scegliere di non utilizzare l'efficienza dello storage, oppure creare un volume e poi http://["Disattivare la compressione dei dati utilizzando l'interfaccia CLI"^].
+La compressione deve essere disattivata su tutti i volumi per sfruttare i miglioramenti delle prestazioni di Flash cache. Quando crei un volume da Cloud Manager, puoi scegliere di non utilizzare l'efficienza dello storage, oppure creare un volume e poi http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["Disattivare la compressione dei dati utilizzando l'interfaccia CLI"^].
 
 

@@ -16,6 +16,6 @@ summary: Puoi esaminare i risultati delle performance per aiutarti a decidere qu
 [role="lead"]
 Puoi esaminare i risultati delle performance per aiutarti a decidere quali carichi di lavoro sono appropriati per Cloud Volumes ONTAP.
 
-Per Cloud Volumes ONTAP per AWS, fare riferimento a. https://["Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni"^].
+Per Cloud Volumes ONTAP per AWS, fare riferimento a. https://www.netapp.com/us/media/tr-4383.pdf["Report tecnico di NetApp 4383: Caratterizzazione delle performance di Cloud Volumes ONTAP nei servizi Web Amazon con carichi di lavoro delle applicazioni"^].
 
-Per Cloud Volumes ONTAP per Microsoft Azure, fare riferimento a. https://["Report tecnico di NetApp 4671: Caratterizzazione delle performance di Cloud Volumes ONTAP in Azure con carichi di lavoro applicativi"^].
+Per Cloud Volumes ONTAP per Microsoft Azure, fare riferimento a. https://www.netapp.com/us/media/tr-4671.pdf["Report tecnico di NetApp 4671: Caratterizzazione delle performance di Cloud Volumes ONTAP in Azure con carichi di lavoro applicativi"^].

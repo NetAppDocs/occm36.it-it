@@ -57,7 +57,7 @@ Devi scegliere il disco che soddisfa i tuoi requisiti in termini di performance 
 ** I dischi rigidi a freddo sono destinati ai backup o ai dati a cui si accede raramente, perché le performance sono molto basse. Come i dischi HDD ottimizzati per il throughput, le performance sono definite in termini di throughput.
 
 
-Per ulteriori informazioni, fare riferimento a. http://["Documentazione AWS: Tipi di volume EBS"^].
+Per ulteriori informazioni, fare riferimento a. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentazione AWS: Tipi di volume EBS"^].
 
 |===
 +
@@ -86,7 +86,7 @@ Devi scegliere il disco che soddisfa i tuoi requisiti in termini di performance 
 ** I dischi HDD ottimizzati per il throughput sono destinati a carichi di lavoro con accesso frequente che richiedono un throughput rapido e coerente.
 
 
-Per ulteriori informazioni, fare riferimento a. http://["Documentazione AWS: Tipi di volume EBS"^].
+Per ulteriori informazioni, fare riferimento a. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentazione AWS: Tipi di volume EBS"^].
 
 
 
@@ -99,7 +99,7 @@ Per ulteriori informazioni, fare riferimento a. http://["Documentazione AWS: Tip
 | IP mobile | Gli indirizzi IP devono essere esterni al blocco CIDR per tutti i VPC della regione. 
 
 
-| Tabella di routing | Se si dispone di più tabelle di percorso, è molto importante selezionare le tabelle di percorso corrette. In caso contrario, alcuni client potrebbero non avere accesso alla coppia ha. Per ulteriori informazioni, fare riferimento a.  http://["Documentazione AWS: Tabelle di percorso"^]. 
+| Tabella di routing | Se si dispone di più tabelle di percorso, è molto importante selezionare le tabelle di percorso corrette. In caso contrario, alcuni client potrebbero non avere accesso alla coppia ha. Per ulteriori informazioni, fare riferimento a.  http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["Documentazione AWS: Tabelle di percorso"^]. 
 |===
 +
 L'immagine seguente mostra la pagina nodi e mediatore. Ogni istanza si trova in un'area di disponibilità separata.

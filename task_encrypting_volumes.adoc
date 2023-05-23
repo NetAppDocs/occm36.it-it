@@ -27,7 +27,7 @@ Attualmente, Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con 
 link:concept_security.html["Scopri di più sulle tecnologie di crittografia supportate"].
 
 .Fasi
-. Esaminare l'elenco dei Key Manager supportati in http://["Tool di matrice di interoperabilità NetApp"^].
+. Esaminare l'elenco dei Key Manager supportati in http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^].
 +
 
 TIP: Cercare la soluzione *Key Manager*.
@@ -35,11 +35,11 @@ TIP: Cercare la soluzione *Key Manager*.
 . link:task_connecting_to_otc.html["Connettersi all'interfaccia utente di Cloud Volumes ONTAP"^].
 . Installare una licenza per la crittografia dei volumi NetApp sul sistema Cloud Volumes ONTAP.
 +
-http://["Guida all'alimentazione per la crittografia NetApp di ONTAP 9: Installazione della licenza"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-F5F371C0-7713-4A16-B5BF-A3514A97960D.html["Guida all'alimentazione per la crittografia NetApp di ONTAP 9: Installazione della licenza"^]
 
 . Installare i certificati SSL e connettersi ai server di gestione delle chiavi esterni.
 +
-http://["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Configurazione della gestione esterna delle chiavi"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-DD718B42-038D-4009-84FF-20BBD6530BC2.html["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Configurazione della gestione esterna delle chiavi"^]
 
 . Creare un nuovo volume crittografato o convertire un volume non crittografato esistente utilizzando CLI o System Manager.
 +
@@ -47,11 +47,11 @@ http://["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Configurazi
 +
 *** Per i nuovi volumi, utilizzare il comando *volume create* con il parametro -Encrypt.
 +
-http://["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Attivazione della crittografia su un nuovo volume"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-A5D3FDEF-CA10-4A54-9E17-DB9E9954082E.html["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Attivazione della crittografia su un nuovo volume"^]
 
 *** Per i volumi esistenti, utilizzare il comando *volume Encryption conversion start*.
 +
-http://["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Attivazione della crittografia su un volume esistente con il comando di avvio della conversione della crittografia del volume"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/GUID-1468CE48-A0D9-4D45-BF78-A11C26724051.html["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Attivazione della crittografia su un volume esistente con il comando di avvio della conversione della crittografia del volume"^]
 
 
 
@@ -59,11 +59,11 @@ http://["ONTAP 9 Guida all'alimentazione per la crittografia NetApp: Attivazione
 +
 *** Per i nuovi volumi, fare clic su *Storage > Volumes > Create > Create FlexVol* (archiviazione > volumi > Crea volume > Crea volume), quindi selezionare *Encrypted* (crittografato).
 +
-http://["Gestione dei cluster di ONTAP 9 con Gestione di sistema: Creazione di volumi FlexVol"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-3FA865E2-AE14-40A9-BF76-A2D7EB44D387.html["Gestione dei cluster di ONTAP 9 con Gestione di sistema: Creazione di volumi FlexVol"^]
 
 *** Per i volumi esistenti, selezionare il volume, fare clic su *Edit*, quindi selezionare *Encrypted*.
 +
-http://["Gestione dei cluster di ONTAP 9 con Gestione di sistema: Modifica delle proprietà dei volumi"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-950/GUID-906E88E4-8CE9-465F-8AC7-0C089080B2C5.html["Gestione dei cluster di ONTAP 9 con Gestione di sistema: Modifica delle proprietà dei volumi"^]
 
 
 

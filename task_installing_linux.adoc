@@ -39,9 +39,9 @@ Se viene visualizzato un messaggio che indica che l'installazione di awscli non 
 
 
 . Revisione link:reference_cloud_mgr_reqs.html["Requisiti degli host di Cloud Manager"].
-. Scaricare il software dal http://["Sito di supporto NetApp"^], Quindi copiarlo sull'host Linux.
+. Scaricare il software dal http://mysupport.netapp.com/NOW/cgi-bin/software["Sito di supporto NetApp"^], Quindi copiarlo sull'host Linux.
 +
-Per informazioni sulla connessione e la copia del file in un'istanza EC2 in AWS, vedere http://["Documentazione AWS: Connessione all'istanza Linux tramite SSH"^].
+Per informazioni sulla connessione e la copia del file in un'istanza EC2 in AWS, vedere http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["Documentazione AWS: Connessione all'istanza Linux tramite SSH"^].
 
 . Assegnare le autorizzazioni per eseguire lo script.
 +
@@ -81,13 +81,13 @@ Cloud Manager è ora installato. Al termine dell'installazione, il servizio Clou
 
 . Aprire un browser Web e immettere il seguente URL:
 +
-https://[]
+https://_ipaddress_:__port__[]
 
 +
 _Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pubblico, a seconda della configurazione dell'host Cloud Manager. Ad esempio, se Cloud Manager si trova nel cloud pubblico senza un indirizzo IP pubblico, è necessario inserire un indirizzo IP privato da un host che ha una connessione all'host Cloud Manager.
 
 +
-_Port_ è obbligatorio se sono state modificate le porte HTTP (80) o HTTPS (443) predefinite. Ad esempio, se la porta HTTPS è stata modificata in 8443, immettere https://[]
+_Port_ è obbligatorio se sono state modificate le porte HTTP (80) o HTTPS (443) predefinite. Ad esempio, se la porta HTTPS è stata modificata in 8443, immettere https://_ipaddress_:8443[]
 
 . Iscriviti a un account NetApp Cloud Central o effettua l'accesso se ne hai già uno.
 . Al momento dell'iscrizione o dell'accesso, Cloud Manager aggiunge automaticamente l'account utente come amministratore del sistema.

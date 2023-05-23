@@ -48,11 +48,11 @@ Ad un livello elevato, le differenze tra i tipi di dischi EBS sono le seguenti:
 
 NOTE: I dischi rigidi Cold non sono supportati con configurazioni ha e con tiering dei dati.
 
-Per ulteriori informazioni sui casi di utilizzo di questi dischi, fare riferimento a. http://["Documentazione AWS: Tipi di volume EBS"^].
+Per ulteriori informazioni sui casi di utilizzo di questi dischi, fare riferimento a. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentazione AWS: Tipi di volume EBS"^].
 
 link:task_planning_your_config.html#sizing-your-system-in-aws["Scopri come scegliere i tipi di dischi e le dimensioni dei dischi per i tuoi sistemi in AWS"].
 
-https://["Esaminare i limiti di storage per Cloud Volumes ONTAP"].
+https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["Esaminare i limiti di storage per Cloud Volumes ONTAP"].
 
 
 
@@ -78,8 +78,8 @@ Ogni tipo di disco gestito ha una dimensione massima di 32 TB.
 Coppie HA:: Le coppie HA utilizzano i blob di pagina Premium, che hanno una dimensione massima del disco di 8 TB.
 
 
-Per ulteriori informazioni sui casi di utilizzo di questi dischi, vedere https://["Documentazione di Microsoft Azure: Introduzione allo storage Microsoft Azure"^].
+Per ulteriori informazioni sui casi di utilizzo di questi dischi, vedere https://azure.microsoft.com/documentation/articles/storage-introduction/["Documentazione di Microsoft Azure: Introduzione allo storage Microsoft Azure"^].
 
 link:task_planning_your_config.html#sizing-your-system-in-azure["Scopri come scegliere i tipi di dischi e le dimensioni dei dischi per i tuoi sistemi in Azure"].
 
-https://["Esaminare i limiti di storage per Cloud Volumes ONTAP"].
+https://docs.netapp.com/cloud-volumes-ontap/us-en/reference_storage_limits_95.html["Esaminare i limiti di storage per Cloud Volumes ONTAP"].

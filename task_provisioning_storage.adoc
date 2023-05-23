@@ -177,6 +177,6 @@ Questa procedura descrive come utilizzare System Manager per la versione 9.3 e s
 . Fare clic su *Create* (Crea) e seguire le istruzioni per creare il LUN.
 . Connettersi al LUN dagli host.
 +
-Per istruzioni, consultare http://["Documentazione delle utility host"^] per il sistema operativo in uso.
+Per istruzioni, consultare http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343["Documentazione delle utility host"^] per il sistema operativo in uso.
 
 

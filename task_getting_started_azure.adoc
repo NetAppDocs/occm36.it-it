@@ -35,7 +35,7 @@ Questo passaggio è importante perché Cloud Manager non può implementare Cloud
 Quando si implementa Cloud Manager da NetApp Cloud Central, è necessario utilizzare un account Azure che disponga delle autorizzazioni necessarie per implementare la macchina virtuale Cloud Manager.
 
 [role="quick-margin-list"]
-. Scaricare il https://["Policy di NetApp Cloud Central per Azure"^].
+. Scaricare il https://mysupport.netapp.com/cloudontap/iampolicies["Policy di NetApp Cloud Central per Azure"^].
 . Modificare il file JSON aggiungendo il proprio ID di abbonamento Azure al campo "AssignableScopes".
 . Utilizzare il file JSON per creare un ruolo personalizzato in Azure denominato _Azure SetupAsService_.
 +
@@ -49,7 +49,7 @@ Esempio: *az role Definition create --role-Definition C:/Policy_for_Setup_as_Ser
 === image:number3.png["Numero 3"] Lanciate Cloud Manager da NetApp Cloud Central
 
 [role="quick-margin-para"]
-Il software Cloud Manager è necessario per implementare e gestire Cloud Volumes ONTAP. L'avvio di un'istanza di Cloud Manager richiede pochi minuti https://["Cloud Central"^].
+Il software Cloud Manager è necessario per implementare e gestire Cloud Volumes ONTAP. L'avvio di un'istanza di Cloud Manager richiede pochi minuti https://cloud.netapp.com["Cloud Central"^].
 
 
 
