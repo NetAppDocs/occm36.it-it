@@ -1750,7 +1750,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 06:45:04 +0000">05/23/2023</time>
+    <time datetime="2023-05-23 08:17:47 +0000">05/23/2023</time>
     
   
 
@@ -1763,7 +1763,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Si consiglia di implementare Cloud Manager in Azure utilizzando https://["NetApp Cloud Central"^], Ma è possibile implementarlo da Azure Marketplace, se necessario.</p>
+<p>Si consiglia di implementare Cloud Manager in Azure utilizzando <a href="https://cloud.netapp.com" target="_blank" rel="noopener">"NetApp Cloud Central"</a>, Ma è possibile implementarlo da Azure Marketplace, se necessario.</p>
 </div>
 <div class="paragraph">
 <p>Sono disponibili istruzioni separate per implementare Cloud Manager in <a href="task_installing_azure_gov.html">"Aree pubbliche degli Stati Uniti Azure"</a> e in <a href="task_installing_azure_germany.html">"Regioni Azure Germania"</a>.</p>
@@ -1792,7 +1792,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>https://["Vai alla pagina di Azure Marketplace per Cloud Manager"^].</p>
+<p><a href="https://azure.microsoft.com/en-us/marketplace/partners/netapp/netapp-oncommand-cloud-manager/" target="_blank" rel="noopener">"Vai alla pagina di Azure Marketplace per Cloud Manager"</a>.</p>
 </li>
 <li>
 <p>Fare clic su <strong>Get it now</strong> (scarica ora), quindi su <strong>Continue</strong> (continua).</p>
@@ -1819,7 +1819,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <li>
 <p>In <strong>Management</strong>, abilitare <strong>System Assigned Managed Identity</strong> per Cloud Manager selezionando <strong>on</strong>.</p>
 <div class="paragraph">
-<p>Questa impostazione è importante perché un&#8217;identità gestita consente alla macchina virtuale Cloud Manager di identificarsi in Azure Active Directory senza fornire credenziali. https://["Scopri di più sulle identità gestite per le risorse Azure"^].</p>
+<p>Questa impostazione è importante perché un&#8217;identità gestita consente alla macchina virtuale Cloud Manager di identificarsi in Azure Active Directory senza fornire credenziali. <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"Scopri di più sulle identità gestite per le risorse Azure"</a>.</p>
 </div>
 </li>
 </ul>
@@ -1834,7 +1834,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <li>
 <p>Aprire un browser Web da un host connesso alla macchina virtuale Cloud Manager e immettere il seguente URL:</p>
 <div class="paragraph">
-<p>http://[]</p>
+<p><a href="http://<em>ipaddress</em>:80" class="bare">http://<em>ipaddress</em>:80</a></p>
 </div>
 <div class="paragraph">
 <p>Al momento dell&#8217;accesso, Cloud Manager aggiunge automaticamente l&#8217;account utente come amministratore del sistema.</p>
@@ -1855,7 +1855,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <h2 id="concessione-delle-autorizzazioni-azure-a-cloud-manager">Concessione delle autorizzazioni Azure a Cloud Manager</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Quando hai implementato Cloud Manager in Azure, dovresti aver attivato una https://["identità gestita assegnata dal sistema"^]. È ora necessario concedere le autorizzazioni necessarie per Azure creando un ruolo personalizzato e assegnando il ruolo alla macchina virtuale Cloud Manager per una o più sottoscrizioni.</p>
+<p>Quando hai implementato Cloud Manager in Azure, dovresti aver attivato una <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"identità gestita assegnata dal sistema"</a>. È ora necessario concedere le autorizzazioni necessarie per Azure creando un ruolo personalizzato e assegnando il ruolo alla macchina virtuale Cloud Manager per una o più sottoscrizioni.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
@@ -1865,7 +1865,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Scaricare il https://["Policy di Cloud Manager Azure"^].</p>
+<p>Scaricare il <a href="https://mysupport.netapp.com/cloudontap/iampolicies" target="_blank" rel="noopener">"Policy di Cloud Manager Azure"</a>.</p>
 </li>
 <li>
 <p>Modificare il file JSON aggiungendo gli ID di abbonamento Azure all&#8217;ambito assegnabile.</p>
@@ -1917,7 +1917,7 @@ Se si implementa Cloud Manager da Azure Marketplace, Cloud Manager è ancora int
 <img src="/us-en/occm36/images/note.svg" alt="Nota">
 </td>
 <td class="content">
-L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in https://["Policy di Cloud Manager"]. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
+L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in <a href="https://mysupport.netapp.com/info/web/ECMP11022837.html">"Policy di Cloud Manager"</a>. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
 </td>
 </tr>
 </table>

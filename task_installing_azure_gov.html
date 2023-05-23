@@ -1750,7 +1750,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 06:45:04 +0000">05/23/2023</time>
+    <time datetime="2023-05-23 08:17:47 +0000">05/23/2023</time>
     
   
 
@@ -1766,7 +1766,7 @@
 <p>Per attivare Cloud Manager in un&#8217;area governativa degli Stati Uniti, è necessario innanzitutto implementare Cloud Manager da Azure Government Marketplace. Fornire quindi le autorizzazioni necessarie a Cloud Manager per implementare e gestire i sistemi Cloud Volumes ONTAP.</p>
 </div>
 <div class="paragraph">
-<p>Per un elenco delle regioni governative statunitensi Azure supportate, vedere https://["Cloud Volumes Global Regions"^].</p>
+<p>Per un elenco delle regioni governative statunitensi Azure supportate, vedere <a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Cloud Volumes Global Regions"</a>.</p>
 </div>
 </div>
 </div>
@@ -1813,7 +1813,7 @@
 <li>
 <p>Aprire un browser Web da un host connesso alla macchina virtuale Cloud Manager e immettere il seguente URL:</p>
 <div class="paragraph">
-<p>http://[]</p>
+<p><a href="http://<em>ipaddress</em>:80" class="bare">http://<em>ipaddress</em>:80</a></p>
 </div>
 <div class="paragraph">
 <p>Al momento dell&#8217;accesso, Cloud Manager aggiunge automaticamente l&#8217;account utente come amministratore del sistema.</p>
@@ -1834,7 +1834,7 @@
 <h2 id="concessione-delle-autorizzazioni-azure-a-cloud-manager-utilizzando-unidentità-gestita">Concessione delle autorizzazioni Azure a Cloud Manager utilizzando un&#8217;identità gestita</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Il modo più semplice per fornire le autorizzazioni consiste nell&#8217;attivare un https://["identità gestita"^] Sulla macchina virtuale Cloud Manager, quindi assegnando le autorizzazioni necessarie alla macchina virtuale. Se si preferisce, un metodo alternativo è quello di <a href="task_adding_cloud_accounts.html#granting-azure-permissions-using-a-service-principal">"Concedere le autorizzazioni ad Azure utilizzando un&#8217;entità del servizio"</a>.</p>
+<p>Il modo più semplice per fornire le autorizzazioni consiste nell&#8217;attivare un <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"identità gestita"</a> Sulla macchina virtuale Cloud Manager, quindi assegnando le autorizzazioni necessarie alla macchina virtuale. Se si preferisce, un metodo alternativo è quello di <a href="task_adding_cloud_accounts.html#granting-azure-permissions-using-a-service-principal">"Concedere le autorizzazioni ad Azure utilizzando un&#8217;entità del servizio"</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
@@ -1857,7 +1857,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Scaricare il https://["Policy di Cloud Manager Azure"^].</p>
+<p>Scaricare il <a href="https://mysupport.netapp.com/cloudontap/iampolicies" target="_blank" rel="noopener">"Policy di Cloud Manager Azure"</a>.</p>
 </li>
 <li>
 <p>Modificare il file JSON aggiungendo gli ID di abbonamento Azure all&#8217;ambito assegnabile.</p>
@@ -1909,7 +1909,7 @@
 <img src="/us-en/occm36/images/note.svg" alt="Nota">
 </td>
 <td class="content">
-L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in https://["Policy di Cloud Manager"]. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
+L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in <a href="https://mysupport.netapp.com/info/web/ECMP11022837.html">"Policy di Cloud Manager"</a>. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
 </td>
 </tr>
 </table>

@@ -1750,7 +1750,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 06:45:04 +0000">05/23/2023</time>
+    <time datetime="2023-05-23 08:17:47 +0000">05/23/2023</time>
     
   
 
@@ -1795,12 +1795,12 @@
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Scarica la policy IAM di Cloud Manager da https://["Pagina delle policy di Cloud Manager"^].</p>
+<p>Scarica la policy IAM di Cloud Manager da <a href="https://mysupport.netapp.com/cloudontap/iampolicies" target="_blank" rel="noopener">"Pagina delle policy di Cloud Manager"</a>.</p>
 </li>
 <li>
 <p>Dalla console IAM, creare la propria policy copiando e incollando il testo dalla policy IAM di Cloud Manager.</p>
 <div class="paragraph">
-<p>https://["Documentazione AWS: Creazione di policy IAM"^]</p>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html" target="_blank" rel="noopener">"Documentazione AWS: Creazione di policy IAM"</a></p>
 </div>
 </li>
 <li>
@@ -1808,10 +1808,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p>https://["Documentazione AWS: Creazione dei ruoli IAM"^]</p>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html" target="_blank" rel="noopener">"Documentazione AWS: Creazione dei ruoli IAM"</a></p>
 </li>
 <li>
-<p>https://["Documentazione di AWS: Aggiunta e rimozione dei criteri IAM"^]</p>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html" target="_blank" rel="noopener">"Documentazione di AWS: Aggiunta e rimozione dei criteri IAM"</a></p>
 </li>
 </ul>
 </div>
@@ -1842,7 +1842,7 @@
 <p>Inserire l&#8217;ID dell&#8217;account in cui risiede l&#8217;istanza di Cloud Manager.</p>
 </li>
 <li>
-<p>Allegare la policy IAM di Cloud Manager, disponibile in https://["Pagina delle policy di Cloud Manager"^].</p>
+<p>Allegare la policy IAM di Cloud Manager, disponibile in <a href="https://mysupport.netapp.com/cloudontap/iampolicies" target="_blank" rel="noopener">"Pagina delle policy di Cloud Manager"</a>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_iam_create_role.gif" alt="Una schermata che mostra la pagina Create role (Crea ruolo) nella console AWS IAM. In Select type of trusted entity (Seleziona tipo di entità attendibile), viene selezionato un altro account AWS."></span></p>
 </div>
@@ -1980,7 +1980,7 @@ La procedura seguente utilizza il nuovo portale Azure. In caso di problemi, util
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Scaricare il https://["Policy di Cloud Manager Azure"^].</p>
+<p>Scaricare il <a href="https://mysupport.netapp.com/cloudontap/iampolicies" target="_blank" rel="noopener">"Policy di Cloud Manager Azure"</a>.</p>
 </li>
 <li>
 <p>Modificare il file JSON aggiungendo gli ID di abbonamento Azure all&#8217;ambito assegnabile.</p>
@@ -2022,7 +2022,7 @@ La procedura seguente utilizza il nuovo portale Azure. In caso di problemi, util
 </div>
 <div class="paragraph">
 <div class="title">Prima di iniziare</div>
-<p>È necessario disporre delle autorizzazioni appropriate in Azure per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo. Per ulteriori informazioni, fare riferimento a. https://["Documentazione di Microsoft Azure: Utilizza il portale per creare un&#8217;applicazione Active Directory e un service principal in grado di accedere alle risorse"^].</p>
+<p>È necessario disporre delle autorizzazioni appropriate in Azure per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo. Per ulteriori informazioni, fare riferimento a. <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Utilizza il portale per creare un&#8217;applicazione Active Directory e un service principal in grado di accedere alle risorse"</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
@@ -2044,7 +2044,7 @@ La procedura seguente utilizza il nuovo portale Azure. In caso di problemi, util
 <p>Fare clic su <strong>Nuova registrazione applicazione</strong>.</p>
 </li>
 <li>
-<p>Immettere un nome per l&#8217;applicazione, mantenere selezionata l&#8217;opzione <strong>Web app/API</strong>, quindi immettere un URL, ad esempio http://[]</p>
+<p>Immettere un nome per l&#8217;applicazione, mantenere selezionata l&#8217;opzione <strong>Web app/API</strong>, quindi immettere un URL, ad esempio <a href="http://url" class="bare">http://url</a></p>
 </li>
 <li>
 <p>Fare clic su <strong>Create</strong> (Crea).</p>
@@ -2205,7 +2205,7 @@ La procedura seguente utilizza il nuovo portale Azure. In caso di problemi, util
 <h2 id="associazione-di-sottoscrizioni-azure-aggiuntive-a-unidentità-gestita">Associazione di sottoscrizioni Azure aggiuntive a un&#8217;identità gestita</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Manager consente di scegliere l&#8217;account e l&#8217;abbonamento Azure in cui si desidera implementare Cloud Volumes ONTAP. Non è possibile selezionare un&#8217;altra sottoscrizione Azure per il profilo di identità gestita, a meno che non venga associato a. https://["identità gestita"^] con questi abbonamenti.</p>
+<p>Cloud Manager consente di scegliere l&#8217;account e l&#8217;abbonamento Azure in cui si desidera implementare Cloud Volumes ONTAP. Non è possibile selezionare un&#8217;altra sottoscrizione Azure per il profilo di identità gestita, a meno che non venga associato a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"identità gestita"</a> con questi abbonamenti.</p>
 </div>
 <div class="paragraph">
 <div class="title">A proposito di questa attività</div>
@@ -2237,7 +2237,7 @@ La procedura seguente utilizza il nuovo portale Azure. In caso di problemi, util
 <img src="/us-en/occm36/images/note.svg" alt="Nota">
 </td>
 <td class="content">
-L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in https://["Policy di Cloud Manager"]. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
+L&#8217;operatore di gestione cloud di OnCommand è il nome predefinito fornito in <a href="https://mysupport.netapp.com/info/web/ECMP11022837.html">"Policy di Cloud Manager"</a>. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
 </td>
 </tr>
 </table>

@@ -1750,7 +1750,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 06:45:04 +0000">05/23/2023</time>
+    <time datetime="2023-05-23 08:17:47 +0000">05/23/2023</time>
     
   
 
@@ -1836,13 +1836,13 @@
 <h2 id="requisiti-per-il-tiering-dei-dati-in-aws">Requisiti per il tiering dei dati in AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Assicurarsi che Cloud Volumes ONTAP sia connesso a S3. Il modo migliore per fornire tale connessione consiste nella creazione di un endpoint VPC per il servizio S3. Per istruzioni, vedere https://["Documentazione AWS: Creazione di un endpoint gateway"^].</p>
+<p>Assicurarsi che Cloud Volumes ONTAP sia connesso a S3. Il modo migliore per fornire tale connessione consiste nella creazione di un endpoint VPC per il servizio S3. Per istruzioni, vedere <a href="https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint" target="_blank" rel="noopener">"Documentazione AWS: Creazione di un endpoint gateway"</a>.</p>
 </div>
 <div class="paragraph">
 <p>Quando si crea l&#8217;endpoint VPC, assicurarsi di selezionare la regione, il VPC e la tabella di routing che corrispondono all&#8217;istanza di Cloud Volumes ONTAP. È inoltre necessario modificare il gruppo di protezione per aggiungere una regola HTTPS in uscita che abilita il traffico all&#8217;endpoint S3. In caso contrario, Cloud Volumes ONTAP non può connettersi al servizio S3.</p>
 </div>
 <div class="paragraph">
-<p>In caso di problemi, vedere https://["AWS Support Knowledge Center: Perché non è possibile connettersi a un bucket S3 utilizzando un endpoint VPC gateway?"^].</p>
+<p>In caso di problemi, vedere <a href="https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/" target="_blank" rel="noopener">"AWS Support Knowledge Center: Perché non è possibile connettersi a un bucket S3 utilizzando un endpoint VPC gateway?"</a>.</p>
 </div>
 </div>
 </div>
@@ -1859,7 +1859,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>Queste autorizzazioni sono incluse nella versione più recente https://["Policy di Cloud Manager"].</p>
+<p>Queste autorizzazioni sono incluse nella versione più recente <a href="https://mysupport.netapp.com/cloudontap/iampolicies">"Policy di Cloud Manager"</a>.</p>
 </div>
 </div>
 </div>

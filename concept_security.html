@@ -1750,7 +1750,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 06:45:04 +0000">05/23/2023</time>
+    <time datetime="2023-05-23 08:17:47 +0000">05/23/2023</time>
     
   
 
@@ -1795,7 +1795,7 @@
 <p>NetApp Volume Encryption (NVE) è una tecnologia software per la crittografia dei dati inattivi di un volume alla volta. I dati, le copie Snapshot e i metadati sono crittografati. L&#8217;accesso ai dati viene fornito da una chiave XTS-AES-256 univoca, una per volume.</p>
 </div>
 <div class="paragraph">
-<p>Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in http://["Tool di matrice di interoperabilità NetApp"^] Nella soluzione <strong>Key Manager</strong>.</p>
+<p>Cloud Volumes ONTAP supporta la crittografia dei volumi NetApp con un server di gestione delle chiavi esterno. Onboard Key Manager non è supportato. I Key Manager supportati sono disponibili in <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"Tool di matrice di interoperabilità NetApp"</a> Nella soluzione <strong>Key Manager</strong>.</p>
 </div>
 <div class="paragraph">
 <p>È possibile attivare NetApp Volume Encryption su un volume nuovo o esistente utilizzando CLI o System Manager. Cloud Manager non supporta NetApp Volume Encryption. Per istruzioni, vedere <a href="task_encrypting_volumes.html">"Crittografia dei volumi con NetApp Volume Encryption"</a>.</p>
@@ -1804,7 +1804,7 @@
 <div class="sect2">
 <h3 id="servizio-di-gestione-delle-chiavi-aws">Servizio di gestione delle chiavi AWS</h3>
 <div class="paragraph">
-<p>Quando si avvia un sistema Cloud Volumes ONTAP in AWS, è possibile attivare la crittografia dei dati utilizzando http://["AWS Key Management Service (KMS)"^]. Cloud Manager richiede le chiavi dati utilizzando una chiave master del cliente (CMK).</p>
+<p>Quando si avvia un sistema Cloud Volumes ONTAP in AWS, è possibile attivare la crittografia dei dati utilizzando <a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html" target="_blank" rel="noopener">"AWS Key Management Service (KMS)"</a>. Cloud Manager richiede le chiavi dati utilizzando una chiave master del cliente (CMK).</p>
 </div>
 <div class="paragraph">
 <p>Se si desidera utilizzare questa opzione di crittografia, assicurarsi che AWS KMS sia configurato correttamente. Per ulteriori informazioni, vedere <a href="task_setting_up_kms.html">"Configurazione di AWS KMS"</a>.</p>
@@ -1813,7 +1813,7 @@
 <div class="sect2">
 <h3 id="azure-storage-service-encryption">Azure Storage Service Encryption</h3>
 <div class="paragraph">
-<p>https://["Azure Storage Service Encryption"^] Per i dati inattivi è attivato per impostazione predefinita per i dati Cloud Volumes ONTAP in Azure. Non è richiesta alcuna configurazione.</p>
+<p><a href="https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/" target="_blank" rel="noopener">"Azure Storage Service Encryption"</a> Per i dati inattivi è attivato per impostazione predefinita per i dati Cloud Volumes ONTAP in Azure. Non è richiesta alcuna configurazione.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1840,10 +1840,10 @@ Le chiavi gestite dal cliente non sono supportate con Cloud Volumes ONTAP.
 <p>La scansione antivirus di ONTAP, denominata <em>Vscan</em>, combina il software antivirus di terze parti più all&#8217;avanguardia con le funzionalità di ONTAP che offrono la flessibilità necessaria per controllare quali file vengono sottoposti a scansione e quando.</p>
 </div>
 <div class="paragraph">
-<p>Per informazioni su vendor, software e versioni supportate da Vscan, consultare http://["Matrice di interoperabilità NetApp"^].</p>
+<p>Per informazioni su vendor, software e versioni supportate da Vscan, consultare <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"Matrice di interoperabilità NetApp"</a>.</p>
 </div>
 <div class="paragraph">
-<p>Per informazioni su come configurare e gestire la funzionalità antivirus sui sistemi ONTAP, consultare http://["Guida alla configurazione antivirus di ONTAP 9"^].</p>
+<p>Per informazioni su come configurare e gestire la funzionalità antivirus sui sistemi ONTAP, consultare <a href="http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html" target="_blank" rel="noopener">"Guida alla configurazione antivirus di ONTAP 9"</a>.</p>
 </div>
 </div>
 </div>
